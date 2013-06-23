@@ -1,0 +1,40 @@
+{
+  "name": "grunt-commonjs-aws-s3",
+  "description": "Grunt module that generates Amazon Web Service policy and signature for S3 into a CommonJS module.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/chrisabrams/grunt-commonjs-aws-s3",
+  "author": {
+    "name": "Chris Abrams"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisabrams/grunt-commonjs-aws-s3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisabrams/grunt-commonjs-aws-s3/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/chrisabrams/grunt-commonjs-aws-s3/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "bin": {
+    "grunt-commonjs-aws-s3": "bin/grunt-commonjs-aws-s3"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "grunt": "*",
+    "moment": "*"
+  },
+  "keywords": [
+    "gruntplugin",
+    "amazon",
+    "aws",
+    "commonjs",
+    "s3"
+  ]
+}
