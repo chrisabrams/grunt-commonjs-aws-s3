@@ -27,8 +27,8 @@
     "node": ">=0.8.0"
   },
   "dependencies": {
-    "grunt": "*",
-    "moment": "*"
+    "grunt": "0.4.0",
+    "moment": "2.0.0"
   },
   "keywords": [
     "gruntplugin",
