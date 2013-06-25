@@ -7,14 +7,12 @@
 
     's3-generate': {
       options: {
-        key: '',
-        secret: '',
-        bucket: ''
+        dest: ''
       }
     }
  */
 
-var AWS  = require('../lib/aws'),
+var S3   = require('../lib/s3'),
     path = require('path');
 
 module.exports = function(grunt) {
@@ -26,9 +24,9 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('s3-generate', 'Generates Amazon Web Service policy and signature for S3 into a CommonJS module.', function () {
 
     var options = this.options();
-    var aws = new AWS(options);
+    var s3 = new S3(options);
     var filepath = process.cwd() + '/' + options.dest;
 
-    return grunt.file.write(filepath, 'module.exports = ' + JSON.stringify(aws));
+    return grunt.file.write(filepath, 'module.exports = ' + JSON.stringify(s3));
   });
 }
