@@ -10,9 +10,7 @@ Grunt module that generates Amazon Web Service policy and signature for S3 into 
 Declare where the generated file will be going:
 
     's3-generate': {
-      options: {
-        destination: '/lib/s3.js'
-      }
+      target: '/lib/s3.js'
     }
 
 Then either add the following to your environment variables or in Grunt:

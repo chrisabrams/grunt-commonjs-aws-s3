@@ -1,7 +1,7 @@
 {
   "name": "grunt-commonjs-aws-s3",
   "description": "Grunt module that generates Amazon Web Service policy and signature for S3 into a CommonJS module.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/chrisabrams/grunt-commonjs-aws-s3",
   "author": {
     "name": "Chris Abrams"

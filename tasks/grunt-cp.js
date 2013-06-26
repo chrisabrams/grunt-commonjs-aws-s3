@@ -6,14 +6,11 @@
  * Licensed under the MIT license.
 
     's3-generate': {
-      options: {
-        dest: ''
-      }
+      target: '/lib/s3.js'
     }
  */
 
-var S3   = require('../lib/s3'),
-    path = require('path');
+var S3   = require('../lib/s3');
 
 module.exports = function(grunt) {
 
@@ -23,9 +20,9 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('s3-generate', 'Generates Amazon Web Service policy and signature for S3 into a CommonJS module.', function () {
 
-    var options = this.options();
-    var s3 = new S3(options);
-    var filepath = process.cwd() + '/' + options.dest;
+    var options  = this.options(),
+        s3       = new S3(options),
+        filepath = process.cwd() + '/' + this.data;
 
     return grunt.file.write(filepath, 'module.exports = ' + JSON.stringify(s3));
   });
